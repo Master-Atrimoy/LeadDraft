@@ -1,0 +1,38 @@
+app:
+  name: LeadDraft
+  tagline: Rewrite rough workplace updates into cleaner, audience-aware drafts.
+  purpose: Turn rough notes into clear, audience-ready communication.
+  default_model: llama3.2:3b
+  default_audience: Manager
+  default_tone: Calm and accountable
+  default_length: Brief
+  max_input_chars: 4000
+  request_timeout_seconds: 180
+  ollama_base_url: http://localhost:11434
+  temperature: 0.3
+  top_p: 0.9
+  top_k: 40
+  keep_alive: 30m
+
+options:
+  audiences:
+    - Manager
+    - Executive / Leadership
+    - Client
+    - Engineering Peer
+    - Cross-functional Team
+  tones:
+    - Calm and accountable
+    - Crisp and direct
+    - Diplomatic
+    - Friendly professional
+    - Executive concise
+  lengths:
+    - Brief
+    - Standard
+    - Detailed
+  variation_modes:
+    - Primary
+    - Tighter
+    - Softer
+    - More direct
